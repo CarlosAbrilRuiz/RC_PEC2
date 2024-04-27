@@ -1,0 +1,312 @@
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2000/01/rdf-schema#sameAs
+<http://www.w3.org/2000/01/rdf-schema#sameAs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://www.w3.org/2000/01/rdf-schema#sameAs> <http://www.w3.org/2000/01/rdf-schema#sameAs> "https://dbpedia.org/page/John_F._Kennedy_International_Airport" .
+<http://www.w3.org/2000/01/rdf-schema#sameAs> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2000/01/rdf-schema#comment> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#arrivesAt
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#arrivesAt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#arrivesAt> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#Flight> .
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#arrivesAt> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#Airport> .
+# 
+# http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#departsFrom
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#departsFrom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#departsFrom> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#Flight> .
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#departsFrom> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#Airport> .
+# 
+# http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#hasComment
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#hasComment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#hasComment> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#Review> .
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#hasComment> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#Comment> .
+# 
+# http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#hasRating
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#hasRating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#hasRating> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#Review> .
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#hasRating> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#Rating> .
+# 
+# http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#hasSeatType
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#hasSeatType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#hasSeatType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#Review> .
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#hasSeatType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#SeatType> .
+# 
+# http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#hasTravellerType
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#hasTravellerType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#hasTravellerType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#Review> .
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#hasTravellerType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#TravellerType> .
+# 
+# http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#isFrom
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#isFrom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#isFrom> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#Person> .
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#isFrom> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#Country> .
+# 
+# http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#operatedBy
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#operatedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#operatedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#Flight> .
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#operatedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#Airline> .
+# 
+# http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#receivesReview
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#receivesReview> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#receivesReview> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#Flight> .
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#receivesReview> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#Review> .
+# 
+# http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#usesAircraft
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#usesAircraft> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#usesAircraft> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#Flight> .
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#usesAircraft> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#Aircraft> .
+# 
+# http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#writesReview
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#writesReview> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#writesReview> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#Person> .
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#writesReview> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#Review> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#flightDate
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#flightDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#flightDate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#Flight> .
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#flightDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+# 
+# http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#hasBody
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#hasBody> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#hasBody> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#Comment> .
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#hasBody> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#hasMaxPossibleScore
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#hasMaxPossibleScore> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#hasMaxPossibleScore> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#Rating> .
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#hasMaxPossibleScore> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#hasScore
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#hasScore> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#hasScore> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#Rating> .
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#hasScore> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#hasTitle
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#hasTitle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#hasTitle> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#Comment> .
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#hasTitle> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#isRecommendation
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#isRecommendation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#isRecommendation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#Review> .
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#isRecommendation> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+# 
+# http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#isVerified
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#isVerified> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#isVerified> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#Review> .
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#isVerified> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+# 
+# http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#publishedOn
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#publishedOn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#publishedOn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#Review> .
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#publishedOn> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+# 
+# http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#travellerTypeText
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#travellerTypeText> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#travellerTypeText> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#travellerTypeText> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#TravellerType> .
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#travellerTypeText> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#writtenOn
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#writtenOn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#writtenOn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#Review> .
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#writtenOn> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#Aircraft
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#Aircraft> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#Aircraft> <http://www.w3.org/2000/01/rdf-schema#comment> "Aircraft model" .
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#Aircraft> <http://www.w3.org/2000/01/rdf-schema#label> "Aircraft" .
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#Aircraft> <http://www.w3.org/2000/01/rdf-schema#sameAs> "https://dbpedia.org/ontology/Airport" .
+# 
+# http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#Airline
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#Airline> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#Airline> <http://www.w3.org/2000/01/rdf-schema#comment> "Name of the Airline" .
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#Airline> <http://www.w3.org/2000/01/rdf-schema#label> "Airlane" .
+# 
+# http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#Airport
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#Airport> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#Airport> <http://www.w3.org/2000/01/rdf-schema#comment> "Airport identified by its IATA code." .
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#Airport> <http://www.w3.org/2000/01/rdf-schema#label> "Airport" .
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#Airport> <http://www.w3.org/2000/01/rdf-schema#sameAs> "https://dbpedia.org/page/Airliner" .
+# 
+# http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#Business
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#Business> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#Business> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#HighRange> .
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#Business> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#First> .
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#Business> <http://www.w3.org/2000/01/rdf-schema#comment> "Seat options in the high-range price: Business Class." .
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#Business> <http://www.w3.org/2000/01/rdf-schema#label> "Business" .
+# 
+# http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#CabinStaffService
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#CabinStaffService> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#CabinStaffService> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#Rating> .
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#CabinStaffService> <http://www.w3.org/2000/01/rdf-schema#comment> "Rating given to the service provided by cabin staff." .
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#CabinStaffService> <http://www.w3.org/2000/01/rdf-schema#label> "CabinStaffService" .
+# 
+# http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#Comment
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#Comment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#Comment> <http://www.w3.org/2000/01/rdf-schema#comment> "Written comment by a person" .
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#Comment> <http://www.w3.org/2000/01/rdf-schema#label> "Comment" .
+# 
+# http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#Country
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#Country> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#Country> <http://www.w3.org/2000/01/rdf-schema#comment> "Country identified by its 3-char code" .
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#Country> <http://www.w3.org/2000/01/rdf-schema#label> "Country" .
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#Country> <http://www.w3.org/2000/01/rdf-schema#sameAs> "https://dbpedia.org/ontology/country" .
+# 
+# http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#Economy
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#Economy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#Economy> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#LowRange> .
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#Economy> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#EconomyPlus> .
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#Economy> <http://www.w3.org/2000/01/rdf-schema#comment> "Seat options in the low-range price." .
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#Economy> <http://www.w3.org/2000/01/rdf-schema#comment> "Seat options in the low-range price: Economy Class." .
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#Economy> <http://www.w3.org/2000/01/rdf-schema#label> "Economy" .
+# 
+# http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#EconomyPlus
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#EconomyPlus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#EconomyPlus> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#LowRange> .
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#EconomyPlus> <http://www.w3.org/2000/01/rdf-schema#comment> "Seat options in the low-range price: Economy Plus Class." .
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#EconomyPlus> <http://www.w3.org/2000/01/rdf-schema#label> "EconomyPlus" .
+# 
+# http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#First
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#First> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#First> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#HighRange> .
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#First> <http://www.w3.org/2000/01/rdf-schema#comment> "Seat options in the high-range price: First Class." .
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#First> <http://www.w3.org/2000/01/rdf-schema#label> "First" .
+# 
+# http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#Flight
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#Flight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#Flight> <http://www.w3.org/2000/01/rdf-schema#comment> "Flight number" .
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#Flight> <http://www.w3.org/2000/01/rdf-schema#label> "Flight" .
+# 
+# http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#FoodBeverages
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#FoodBeverages> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#FoodBeverages> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#Rating> .
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#FoodBeverages> <http://www.w3.org/2000/01/rdf-schema#comment> "Rating given to food and beverages served." .
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#FoodBeverages> <http://www.w3.org/2000/01/rdf-schema#label> "FoodBeverages" .
+# 
+# http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#General
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#General> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#General> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#Rating> .
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#General> <http://www.w3.org/2000/01/rdf-schema#comment> "The overall rating." .
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#General> <http://www.w3.org/2000/01/rdf-schema#label> "General" .
+# 
+# http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#GroundService
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#GroundService> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#GroundService> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#Rating> .
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#GroundService> <http://www.w3.org/2000/01/rdf-schema#comment> "Rating given to ground service." .
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#GroundService> <http://www.w3.org/2000/01/rdf-schema#label> "GroundService" .
+# 
+# http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#HighRange
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#HighRange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#HighRange> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#SeatType> .
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#HighRange> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#LowRange> .
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#HighRange> <http://www.w3.org/2000/01/rdf-schema#comment> "Seat options in the high-range price." .
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#HighRange> <http://www.w3.org/2000/01/rdf-schema#label> "HighRange" .
+# 
+# http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#InflightEntertainment
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#InflightEntertainment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#InflightEntertainment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#Rating> .
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#InflightEntertainment> <http://www.w3.org/2000/01/rdf-schema#comment> "Rating given to the in-flight entertainment system." .
+# 
+# http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#LowRange
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#LowRange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#LowRange> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#SeatType> .
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#LowRange> <http://www.w3.org/2000/01/rdf-schema#comment> "Seat options in the low-range price." .
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#LowRange> <http://www.w3.org/2000/01/rdf-schema#label> "LowRange" .
+# 
+# http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#NotRecommendedReview
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#NotRecommendedReview> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#NotRecommendedReview> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#Review> .
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#NotRecommendedReview> <http://www.w3.org/2000/01/rdf-schema#comment> "Review in which the customer replied NO to the question \"Would you recommend us?\"." .
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#NotRecommendedReview> <http://www.w3.org/2000/01/rdf-schema#label> "NotRecommendedReview" .
+# 
+# http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#Person
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#Person> <http://www.w3.org/2000/01/rdf-schema#comment> "Human" .
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#Person> <http://www.w3.org/2000/01/rdf-schema#label> "Person" .
+# 
+# http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#Rating
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#Rating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#Rating> <http://www.w3.org/2000/01/rdf-schema#comment> "Numeric rating given in the review." .
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#Rating> <http://www.w3.org/2000/01/rdf-schema#label> "Rating" .
+# 
+# http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#RecommendedReview
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#RecommendedReview> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#RecommendedReview> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#Review> .
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#RecommendedReview> <http://www.w3.org/2000/01/rdf-schema#comment> "Review in which the customer replied YES to the question \"Would you recommend us?\"." .
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#RecommendedReview> <http://www.w3.org/2000/01/rdf-schema#label> "RecommendedReview" .
+# 
+# http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#Review
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#Review> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#Review> <http://www.w3.org/2000/01/rdf-schema#comment> "Review given to a flight by a person. Links rating, comments and other review aspects." .
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#Review> <http://www.w3.org/2000/01/rdf-schema#label> "Review" .
+# 
+# http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#SeatComfort
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#SeatComfort> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#SeatComfort> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#Rating> .
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#SeatComfort> <http://www.w3.org/2000/01/rdf-schema#comment> "Rating given, how comfortable was the seat." .
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#SeatComfort> <http://www.w3.org/2000/01/rdf-schema#label> "SeatComfort" .
+# 
+# http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#SeatType
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#SeatType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#SeatType> <http://www.w3.org/2000/01/rdf-schema#comment> "The type of seat / cabin" .
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#SeatType> <http://www.w3.org/2000/01/rdf-schema#label> "SeatType" .
+# 
+# http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#TravellerType
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#TravellerType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#TravellerType> <http://www.w3.org/2000/01/rdf-schema#comment> "String specifying the type of traveller / travel." .
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#TravellerType> <http://www.w3.org/2000/01/rdf-schema#label> "TravellerType" .
+# 
+# http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#ValueForMoney
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#ValueForMoney> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#ValueForMoney> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#Rating> .
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#ValueForMoney> <http://www.w3.org/2000/01/rdf-schema#comment> "Rating given, value for money question." .
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#ValueForMoney> <http://www.w3.org/2000/01/rdf-schema#label> "ValueForMoney" .
+# 
+# http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#VerifiedReview
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#VerifiedReview> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#VerifiedReview> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#Review> .
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#VerifiedReview> <http://www.w3.org/2000/01/rdf-schema#comment> "Reviews which haven't still been verified as real." .
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#VerifiedReview> <http://www.w3.org/2000/01/rdf-schema#label> "VerifiedReview" .
+# 
+# http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#WifiConnectivity
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#WifiConnectivity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#WifiConnectivity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#Rating> .
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#WifiConnectivity> <http://www.w3.org/2000/01/rdf-schema#comment> "Rating given to the wifi and connectivity service on the plane." .
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#WifiConnectivity> <http://www.w3.org/2000/01/rdf-schema#label> "WifiConnectivity" .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

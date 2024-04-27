@@ -1,0 +1,23 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "RC_PEC2:EconomyPlus" "RC_PEC2:FoodBeverages" "RC_PEC2:LowRange" "RC_PEC2:VerifiedReview" "RC_PEC2:HighRange" "RC_PEC2:WifiConnectivity" "RC_PEC2:CabinStaffService" "RC_PEC2:SeatComfort" "RC_PEC2:InflightEntertainment" "RC_PEC2:First" "RC_PEC2:NotRecommendedReview" "RC_PEC2:General" "RC_PEC2:Business" "RC_PEC2:Economy" "RC_PEC2:Review" "RC_PEC2:Rating" "RC_PEC2:ValueForMoney" "RC_PEC2:RecommendedReview" "RC_PEC2:SeatType" "RC_PEC2:GroundService" ; /*classes style*/
+	"RC_PEC2:SeatComfort" -> "RC_PEC2:Rating" [ label = "rdfs:subClassOf" ];
+	"RC_PEC2:General" -> "RC_PEC2:Rating" [ label = "rdfs:subClassOf" ];
+	"RC_PEC2:EconomyPlus" -> "RC_PEC2:LowRange" [ label = "rdfs:subClassOf" ];
+	"RC_PEC2:WifiConnectivity" -> "RC_PEC2:Rating" [ label = "rdfs:subClassOf" ];
+	"RC_PEC2:NotRecommendedReview" -> "RC_PEC2:Review" [ label = "rdfs:subClassOf" ];
+	"RC_PEC2:Economy" -> "RC_PEC2:LowRange" [ label = "rdfs:subClassOf" ];
+	"RC_PEC2:CabinStaffService" -> "RC_PEC2:Rating" [ label = "rdfs:subClassOf" ];
+	"RC_PEC2:VerifiedReview" -> "RC_PEC2:Review" [ label = "rdfs:subClassOf" ];
+	"RC_PEC2:Business" -> "RC_PEC2:HighRange" [ label = "rdfs:subClassOf" ];
+	"RC_PEC2:InflightEntertainment" -> "RC_PEC2:Rating" [ label = "rdfs:subClassOf" ];
+	"RC_PEC2:RecommendedReview" -> "RC_PEC2:Review" [ label = "rdfs:subClassOf" ];
+	"RC_PEC2:HighRange" -> "RC_PEC2:SeatType" [ label = "rdfs:subClassOf" ];
+	"RC_PEC2:First" -> "RC_PEC2:HighRange" [ label = "rdfs:subClassOf" ];
+	"RC_PEC2:LowRange" -> "RC_PEC2:SeatType" [ label = "rdfs:subClassOf" ];
+	"RC_PEC2:GroundService" -> "RC_PEC2:Rating" [ label = "rdfs:subClassOf" ];
+	"RC_PEC2:ValueForMoney" -> "RC_PEC2:Rating" [ label = "rdfs:subClassOf" ];
+	"RC_PEC2:FoodBeverages" -> "RC_PEC2:Rating" [ label = "rdfs:subClassOf" ];
+
+}
