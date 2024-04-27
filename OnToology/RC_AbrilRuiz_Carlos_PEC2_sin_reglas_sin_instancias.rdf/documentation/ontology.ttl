@@ -1,0 +1,351 @@
+@prefix : <http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#> .
+
+<http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2> rdf:type owl:Ontology .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://www.w3.org/2000/01/rdf-schema#sameAs
+rdfs:sameAs rdf:type owl:AnnotationProperty ;
+            rdfs:sameAs "https://dbpedia.org/page/John_F._Kennedy_International_Airport" ;
+            rdfs:subPropertyOf rdfs:comment .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#arrivesAt
+:arrivesAt rdf:type owl:ObjectProperty ;
+           rdfs:domain :Flight ;
+           rdfs:range :Airport .
+
+
+###  http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#departsFrom
+:departsFrom rdf:type owl:ObjectProperty ;
+             rdfs:domain :Flight ;
+             rdfs:range :Airport .
+
+
+###  http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#hasComment
+:hasComment rdf:type owl:ObjectProperty ;
+            rdfs:domain :Review ;
+            rdfs:range :Comment .
+
+
+###  http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#hasRating
+:hasRating rdf:type owl:ObjectProperty ;
+           rdfs:domain :Review ;
+           rdfs:range :Rating .
+
+
+###  http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#hasSeatType
+:hasSeatType rdf:type owl:ObjectProperty ;
+             rdfs:domain :Review ;
+             rdfs:range :SeatType .
+
+
+###  http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#hasTravellerType
+:hasTravellerType rdf:type owl:ObjectProperty ;
+                  rdfs:domain :Review ;
+                  rdfs:range :TravellerType .
+
+
+###  http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#isFrom
+:isFrom rdf:type owl:ObjectProperty ;
+        rdfs:domain :Person ;
+        rdfs:range :Country .
+
+
+###  http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#operatedBy
+:operatedBy rdf:type owl:ObjectProperty ;
+            rdfs:domain :Flight ;
+            rdfs:range :Airline .
+
+
+###  http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#receivesReview
+:receivesReview rdf:type owl:ObjectProperty ;
+                rdfs:domain :Flight ;
+                rdfs:range :Review .
+
+
+###  http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#usesAircraft
+:usesAircraft rdf:type owl:ObjectProperty ;
+              rdfs:domain :Flight ;
+              rdfs:range :Aircraft .
+
+
+###  http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#writesReview
+:writesReview rdf:type owl:ObjectProperty ;
+              rdfs:domain :Person ;
+              rdfs:range :Review .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#flightDate
+:flightDate rdf:type owl:DatatypeProperty ;
+            rdfs:domain :Flight ;
+            rdfs:range xsd:dateTime .
+
+
+###  http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#hasBody
+:hasBody rdf:type owl:DatatypeProperty ;
+         rdfs:domain :Comment ;
+         rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#hasMaxPossibleScore
+:hasMaxPossibleScore rdf:type owl:DatatypeProperty ;
+                     rdfs:domain :Rating ;
+                     rdfs:range xsd:decimal .
+
+
+###  http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#hasScore
+:hasScore rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Rating ;
+          rdfs:range xsd:decimal .
+
+
+###  http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#hasTitle
+:hasTitle rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Comment ;
+          rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#isRecommendation
+:isRecommendation rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :Review ;
+                  rdfs:range xsd:boolean .
+
+
+###  http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#isVerified
+:isVerified rdf:type owl:DatatypeProperty ;
+            rdfs:domain :Review ;
+            rdfs:range xsd:boolean .
+
+
+###  http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#publishedOn
+:publishedOn rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Review ;
+             rdfs:range xsd:dateTime .
+
+
+###  http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#travellerTypeText
+:travellerTypeText rdf:type owl:DatatypeProperty ;
+                   rdfs:subPropertyOf owl:topDataProperty ;
+                   rdfs:domain :TravellerType ;
+                   rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#writtenOn
+:writtenOn rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Review ;
+           rdfs:range xsd:dateTime .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#Aircraft
+:Aircraft rdf:type owl:Class ;
+          rdfs:comment "Aircraft model" ;
+          rdfs:label "Aircraft" ;
+          rdfs:sameAs "https://dbpedia.org/ontology/Airport" .
+
+
+###  http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#Airline
+:Airline rdf:type owl:Class ;
+         rdfs:comment "Name of the Airline" ;
+         rdfs:label "Airlane" .
+
+
+###  http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#Airport
+:Airport rdf:type owl:Class ;
+         rdfs:comment "Airport identified by its IATA code." ;
+         rdfs:label "Airport" ;
+         rdfs:sameAs "https://dbpedia.org/page/Airliner" .
+
+
+###  http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#Business
+:Business rdf:type owl:Class ;
+          rdfs:subClassOf :HighRange ;
+          owl:disjointWith :First ;
+          rdfs:comment "Seat options in the high-range price: Business Class." ;
+          rdfs:label "Business" .
+
+
+###  http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#CabinStaffService
+:CabinStaffService rdf:type owl:Class ;
+                   rdfs:subClassOf :Rating ;
+                   rdfs:comment "Rating given to the service provided by cabin staff." ;
+                   rdfs:label "CabinStaffService" .
+
+
+###  http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#Comment
+:Comment rdf:type owl:Class ;
+         rdfs:comment "Written comment by a person" ;
+         rdfs:label "Comment" .
+
+
+###  http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#Country
+:Country rdf:type owl:Class ;
+         rdfs:comment "Country identified by its 3-char code" ;
+         rdfs:label "Country" ;
+         rdfs:sameAs "https://dbpedia.org/ontology/country" .
+
+
+###  http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#Economy
+:Economy rdf:type owl:Class ;
+         rdfs:subClassOf :LowRange ;
+         owl:disjointWith :EconomyPlus ;
+         rdfs:comment "Seat options in the low-range price." ,
+                      "Seat options in the low-range price: Economy Class." ;
+         rdfs:label "Economy" .
+
+
+###  http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#EconomyPlus
+:EconomyPlus rdf:type owl:Class ;
+             rdfs:subClassOf :LowRange ;
+             rdfs:comment "Seat options in the low-range price: Economy Plus Class." ;
+             rdfs:label "EconomyPlus" .
+
+
+###  http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#First
+:First rdf:type owl:Class ;
+       rdfs:subClassOf :HighRange ;
+       rdfs:comment "Seat options in the high-range price: First Class." ;
+       rdfs:label "First" .
+
+
+###  http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#Flight
+:Flight rdf:type owl:Class ;
+        rdfs:comment "Flight number" ;
+        rdfs:label "Flight" .
+
+
+###  http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#FoodBeverages
+:FoodBeverages rdf:type owl:Class ;
+               rdfs:subClassOf :Rating ;
+               rdfs:comment "Rating given to food and beverages served." ;
+               rdfs:label "FoodBeverages" .
+
+
+###  http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#General
+:General rdf:type owl:Class ;
+         rdfs:subClassOf :Rating ;
+         rdfs:comment "The overall rating." ;
+         rdfs:label "General" .
+
+
+###  http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#GroundService
+:GroundService rdf:type owl:Class ;
+               rdfs:subClassOf :Rating ;
+               rdfs:comment "Rating given to ground service." ;
+               rdfs:label "GroundService" .
+
+
+###  http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#HighRange
+:HighRange rdf:type owl:Class ;
+           rdfs:subClassOf :SeatType ;
+           owl:disjointWith :LowRange ;
+           rdfs:comment "Seat options in the high-range price." ;
+           rdfs:label "HighRange" .
+
+
+###  http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#InflightEntertainment
+:InflightEntertainment rdf:type owl:Class ;
+                       rdfs:subClassOf :Rating ;
+                       rdfs:comment "Rating given to the in-flight entertainment system." .
+
+
+###  http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#LowRange
+:LowRange rdf:type owl:Class ;
+          rdfs:subClassOf :SeatType ;
+          rdfs:comment "Seat options in the low-range price." ;
+          rdfs:label "LowRange" .
+
+
+###  http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#NotRecommendedReview
+:NotRecommendedReview rdf:type owl:Class ;
+                      rdfs:subClassOf :Review ;
+                      rdfs:comment "Review in which the customer replied NO to the question \"Would you recommend us?\"." ;
+                      rdfs:label "NotRecommendedReview" .
+
+
+###  http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#Person
+:Person rdf:type owl:Class ;
+        rdfs:comment "Human" ;
+        rdfs:label "Person" .
+
+
+###  http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#Rating
+:Rating rdf:type owl:Class ;
+        rdfs:comment "Numeric rating given in the review." ;
+        rdfs:label "Rating" .
+
+
+###  http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#RecommendedReview
+:RecommendedReview rdf:type owl:Class ;
+                   rdfs:subClassOf :Review ;
+                   rdfs:comment "Review in which the customer replied YES to the question \"Would you recommend us?\"." ;
+                   rdfs:label "RecommendedReview" .
+
+
+###  http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#Review
+:Review rdf:type owl:Class ;
+        rdfs:comment "Review given to a flight by a person. Links rating, comments and other review aspects." ;
+        rdfs:label "Review" .
+
+
+###  http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#SeatComfort
+:SeatComfort rdf:type owl:Class ;
+             rdfs:subClassOf :Rating ;
+             rdfs:comment "Rating given, how comfortable was the seat." ;
+             rdfs:label "SeatComfort" .
+
+
+###  http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#SeatType
+:SeatType rdf:type owl:Class ;
+          rdfs:comment "The type of seat / cabin" ;
+          rdfs:label "SeatType" .
+
+
+###  http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#TravellerType
+:TravellerType rdf:type owl:Class ;
+               rdfs:comment "String specifying the type of traveller / travel." ;
+               rdfs:label "TravellerType" .
+
+
+###  http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#ValueForMoney
+:ValueForMoney rdf:type owl:Class ;
+               rdfs:subClassOf :Rating ;
+               rdfs:comment "Rating given, value for money question." ;
+               rdfs:label "ValueForMoney" .
+
+
+###  http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#VerifiedReview
+:VerifiedReview rdf:type owl:Class ;
+                rdfs:subClassOf :Review ;
+                rdfs:comment "Reviews which haven't still been verified as real." ;
+                rdfs:label "VerifiedReview" .
+
+
+###  http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#WifiConnectivity
+:WifiConnectivity rdf:type owl:Class ;
+                  rdfs:subClassOf :Rating ;
+                  rdfs:comment "Rating given to the wifi and connectivity service on the plane." ;
+                  rdfs:label "WifiConnectivity" .
+
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
