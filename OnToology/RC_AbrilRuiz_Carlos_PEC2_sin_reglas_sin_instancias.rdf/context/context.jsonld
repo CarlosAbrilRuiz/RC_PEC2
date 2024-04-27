@@ -1,0 +1,184 @@
+{
+  "@context" : {
+    "writtenOn" : {
+      "@id" : "http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#writtenOn",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "hasTitle" : {
+      "@id" : "http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#hasTitle",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "NotRecommendedReview" : {
+      "@id" : "http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#NotRecommendedReview"
+    },
+    "Economy" : {
+      "@id" : "http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#Economy"
+    },
+    "General" : {
+      "@id" : "http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#General"
+    },
+    "hasRating" : {
+      "@id" : "http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#hasRating",
+      "@type" : "@id"
+    },
+    "Review" : {
+      "@id" : "http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#Review"
+    },
+    "receivesReview" : {
+      "@id" : "http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#receivesReview",
+      "@type" : "@id"
+    },
+    "Country" : {
+      "@id" : "http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#Country"
+    },
+    "hasTravellerType" : {
+      "@id" : "http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#hasTravellerType",
+      "@type" : "@id"
+    },
+    "Comment" : {
+      "@id" : "http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#Comment"
+    },
+    "usesAircraft" : {
+      "@id" : "http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#usesAircraft",
+      "@type" : "@id"
+    },
+    "topDataProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+    },
+    "publishedOn" : {
+      "@id" : "http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#publishedOn",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "hasComment" : {
+      "@id" : "http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#hasComment",
+      "@type" : "@id"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "writesReview" : {
+      "@id" : "http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#writesReview",
+      "@type" : "@id"
+    },
+    "departsFrom" : {
+      "@id" : "http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#departsFrom",
+      "@type" : "@id"
+    },
+    "ValueForMoney" : {
+      "@id" : "http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#ValueForMoney"
+    },
+    "operatedBy" : {
+      "@id" : "http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#operatedBy",
+      "@type" : "@id"
+    },
+    "InflightEntertainment" : {
+      "@id" : "http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#InflightEntertainment"
+    },
+    "Business" : {
+      "@id" : "http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#Business"
+    },
+    "Airport" : {
+      "@id" : "http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#Airport"
+    },
+    "Person" : {
+      "@id" : "http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#Person"
+    },
+    "CabinStaffService" : {
+      "@id" : "http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#CabinStaffService"
+    },
+    "HighRange" : {
+      "@id" : "http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#HighRange"
+    },
+    "LowRange" : {
+      "@id" : "http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#LowRange"
+    },
+    "hasMaxPossibleScore" : {
+      "@id" : "http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#hasMaxPossibleScore",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "flightDate" : {
+      "@id" : "http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#flightDate",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "hasBody" : {
+      "@id" : "http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#hasBody",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "FoodBeverages" : {
+      "@id" : "http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#FoodBeverages"
+    },
+    "SeatComfort" : {
+      "@id" : "http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#SeatComfort"
+    },
+    "isVerified" : {
+      "@id" : "http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#isVerified",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "WifiConnectivity" : {
+      "@id" : "http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#WifiConnectivity"
+    },
+    "Rating" : {
+      "@id" : "http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#Rating"
+    },
+    "Aircraft" : {
+      "@id" : "http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#Aircraft"
+    },
+    "VerifiedReview" : {
+      "@id" : "http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#VerifiedReview"
+    },
+    "arrivesAt" : {
+      "@id" : "http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#arrivesAt",
+      "@type" : "@id"
+    },
+    "hasScore" : {
+      "@id" : "http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#hasScore",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "isFrom" : {
+      "@id" : "http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#isFrom",
+      "@type" : "@id"
+    },
+    "EconomyPlus" : {
+      "@id" : "http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#EconomyPlus"
+    },
+    "hasSeatType" : {
+      "@id" : "http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#hasSeatType",
+      "@type" : "@id"
+    },
+    "First" : {
+      "@id" : "http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#First"
+    },
+    "Airline" : {
+      "@id" : "http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#Airline"
+    },
+    "Flight" : {
+      "@id" : "http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#Flight"
+    },
+    "GroundService" : {
+      "@id" : "http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#GroundService"
+    },
+    "sameAs" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#sameAs"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "RecommendedReview" : {
+      "@id" : "http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#RecommendedReview"
+    },
+    "travellerTypeText" : {
+      "@id" : "http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#travellerTypeText",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "isRecommendation" : {
+      "@id" : "http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#isRecommendation",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "SeatType" : {
+      "@id" : "http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#SeatType"
+    },
+    "TravellerType" : {
+      "@id" : "http://www.semanticweb.org/abril/ontologies/2024/3/RC_PEC2#TravellerType"
+    }
+  }
+}
