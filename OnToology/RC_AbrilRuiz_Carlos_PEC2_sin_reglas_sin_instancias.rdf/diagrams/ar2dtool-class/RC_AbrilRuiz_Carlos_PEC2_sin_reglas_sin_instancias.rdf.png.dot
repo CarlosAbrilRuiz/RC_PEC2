@@ -1,0 +1,32 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+node [shape = rectangle, color="orange"]; "RC_PEC2:Airport" "RC_PEC2:EconomyPlus" "RC_PEC2:Aircraft" "RC_PEC2:Airline" "RC_PEC2:LowRange" "RC_PEC2:HighRange" "RC_PEC2:First" "RC_PEC2:Flight" "RC_PEC2:Business" "RC_PEC2:Country" "RC_PEC2:Economy" "RC_PEC2:Review" "RC_PEC2:Person" "RC_PEC2:Rating" "RC_PEC2:Comment" "RC_PEC2:TravellerType" "RC_PEC2:SeatType" ; /*classes style*/
+	"RC_PEC2:travellerTypeText" -> "owl:topDataProperty" [ label = "rdfs:subPropertyOf" ];
+	"rdfs:sameAs" -> "rdfs:comment" [ label = "rdfs:subPropertyOf" ];
+	"RC_PEC2:HighRange" -> "RC_PEC2:LowRange" [ label = "owl:disjointWith" ];
+	"RC_PEC2:Economy" -> "RC_PEC2:EconomyPlus" [ label = "owl:disjointWith" ];
+	"RC_PEC2:Business" -> "RC_PEC2:First" [ label = "owl:disjointWith" ];
+	"RC_PEC2:Person" -> "RC_PEC2:Review" [ label = "RC_PEC2:writesReview" ];
+	"RC_PEC2:Review" -> "xsd:boolean" [ label = "RC_PEC2:isRecommendation" ];
+	"RC_PEC2:Person" -> "RC_PEC2:Country" [ label = "RC_PEC2:isFrom" ];
+	"RC_PEC2:Review" -> "xsd:dateTime" [ label = "RC_PEC2:writtenOn" ];
+	"RC_PEC2:Review" -> "RC_PEC2:Rating" [ label = "RC_PEC2:hasRating" ];
+	"RC_PEC2:Rating" -> "xsd:decimal" [ label = "RC_PEC2:hasMaxPossibleScore" ];
+	"RC_PEC2:Flight" -> "xsd:dateTime" [ label = "RC_PEC2:flightDate" ];
+	"RC_PEC2:Rating" -> "xsd:decimal" [ label = "RC_PEC2:hasScore" ];
+	"RC_PEC2:Flight" -> "RC_PEC2:Airport" [ label = "RC_PEC2:departsFrom" ];
+	"RC_PEC2:Review" -> "xsd:dateTime" [ label = "RC_PEC2:publishedOn" ];
+	"RC_PEC2:Review" -> "xsd:boolean" [ label = "RC_PEC2:isVerified" ];
+	"RC_PEC2:Flight" -> "RC_PEC2:Airline" [ label = "RC_PEC2:operatedBy" ];
+	"RC_PEC2:Review" -> "RC_PEC2:Comment" [ label = "RC_PEC2:hasComment" ];
+	"RC_PEC2:Flight" -> "RC_PEC2:Aircraft" [ label = "RC_PEC2:usesAircraft" ];
+	"RC_PEC2:Review" -> "RC_PEC2:TravellerType" [ label = "RC_PEC2:hasTravellerType" ];
+	"RC_PEC2:TravellerType" -> "xsd:string" [ label = "RC_PEC2:travellerTypeText" ];
+	"RC_PEC2:Review" -> "RC_PEC2:SeatType" [ label = "RC_PEC2:hasSeatType" ];
+	"RC_PEC2:Flight" -> "RC_PEC2:Review" [ label = "RC_PEC2:receivesReview" ];
+	"RC_PEC2:Comment" -> "xsd:string" [ label = "RC_PEC2:hasTitle" ];
+	"RC_PEC2:Flight" -> "RC_PEC2:Airport" [ label = "RC_PEC2:arrivesAt" ];
+	"RC_PEC2:Comment" -> "xsd:string" [ label = "RC_PEC2:hasBody" ];
+
+}
